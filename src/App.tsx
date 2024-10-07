@@ -1,13 +1,19 @@
-import React from "react";
-import {Button} from "wb-components";
-import Test from '@/Test'
+import { Button } from 'wb-components';
+
+import Test from '@/Test';
+
 const App = () => {
   return (
-    <div>
-      <Button></Button>
+    <>
+      <Button
+        onClick={() => {
+          console.log(123);
+        }}
+      >
+        python
+      </Button>
       <Test></Test>
-      {/*<Button></Button>*/}
-    </div>
+    </>
   );
 };
 
